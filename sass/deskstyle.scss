@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+@media screen and (min-width: 40em){
+
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+        margin-inline: 15%;
+
+        &::before{
+            content: "";
+        width: 35vw;
+        height: 90vh;
+        position: absolute;
+        top: 0;
+        left: -5vw;
+        border-bottom-left-radius: 100vw;
+        background: linear-gradient($gradient-02, $gradient-01);
+        }
+    }
+
+    .phone{
+        min-width: 15rem;
+    }
+
+    .article{
+        text-align: start;
+        row-gap: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+@media screen and (min-width: 40em) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    margin-inline: 15%;
+  }
+  .wrapper::before {
+    content: "";
+    width: 35vw;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: -5vw;
+    border-bottom-left-radius: 100vw;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  }
+  .phone {
+    min-width: 15rem;
+  }
+  .article {
+    text-align: start;
+    row-gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=deskstyle.css.map */
